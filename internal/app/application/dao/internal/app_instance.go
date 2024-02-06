@@ -20,28 +20,30 @@ type AppInstanceDao struct {
 
 // AppInstanceColumns defines and stores column names for table app_instance.
 type AppInstanceColumns struct {
-	Id        string //
-	Name      string // 应用实例名称
-	Code      string // 应用实例编码
-	Package   string // 应用的安装包
-	Icon      string // 应用图标
-	Address   string // 访问应用的url或路由
-	Type      string // 应用类型（1 内置应用 2 用户自定义应用）
-	Installer string // 安装用户
-	Status    string // 应用的状态（1 运行中2 已停止 3已卸载）
+	Id             string //
+	AppName        string // 应用实例名称
+	AppCode        string // 应用实例编码
+	InstallPackage string // 应用的安装包
+	Icon           string // 应用图标
+	Address        string // 访问应用的url或路由
+	Type           string // 应用类型（1 内置应用 2 用户自定义应用）
+	Installer      string // 安装用户
+	Status         string // 应用的状态（1 运行中2 已停止 3已卸载）
+	Desc           string // 应用描述
 }
 
 // appInstanceColumns holds the columns for table app_instance.
 var appInstanceColumns = AppInstanceColumns{
-	Id:        "id",
-	Name:      "name",
-	Code:      "code",
-	Package:   "package",
-	Icon:      "icon",
-	Address:   "address",
-	Type:      "type",
-	Installer: "installer",
-	Status:    "status",
+	Id:             "id",
+	AppName:        "app_name",
+	AppCode:        "app_code",
+	InstallPackage: "install_package",
+	Icon:           "icon",
+	Address:        "address",
+	Type:           "type",
+	Installer:      "installer",
+	Status:         "status",
+	Desc:           "desc",
 }
 
 // NewAppInstanceDao creates and returns a new DAO object for table data access.
