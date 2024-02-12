@@ -5,6 +5,7 @@ import (
 
 	"github.com/tiger1103/gfast/v3/api/v1/application"
 	"github.com/tiger1103/gfast/v3/internal/app/application/model/entity"
+	"github.com/tiger1103/gfast/v3/internal/app/application/service"
 )
  
  func init() {
